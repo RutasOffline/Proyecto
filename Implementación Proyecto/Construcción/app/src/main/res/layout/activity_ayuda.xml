@@ -1,0 +1,449 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Ayuda">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:forceDarkAllowed="true"
+        android:theme="@style/AppTheme">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView"
+                style="@style/Widget.AppCompat.TextView.SpinnerItem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="50dp"
+                android:text="Servicio de ayuda"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                android:textStyle="bold" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textView20"
+                    android:layout_width="337dp"
+                    android:layout_height="57dp"
+                    android:gravity="center|fill"
+                    android:text="Quiero conocer mi ubicación exacta"
+                    android:textSize="18sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.764"
+                    app:layout_constraintStart_toEndOf="@+id/imageView6"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/imageView6"
+                    android:layout_width="57dp"
+                    android:layout_height="54dp"
+                    android:layout_weight="1"
+                    android:outlineAmbientShadowColor="#00140505"
+                    app:layout_constraintBottom_toBottomOf="@+id/textView20"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@android:drawable/ic_menu_help" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="30dp"
+                    android:paddingRight="10dp"
+                    android:text="1.- Dentro del menú oprime Coordenadas." />
+
+                <TextView
+                    android:id="@+id/textView22"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="30dp"
+                    android:paddingRight="10dp"
+                    android:text='2.- Enseguida oprime el botón "VISTA EN EL MAPA".' />
+
+                <TextView
+                    android:id="@+id/textView23"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="30dp"
+                    android:paddingRight="10dp"
+                    android:text="3.- Espera un momento y el mapa cargará automáticamente tu ubicación." />
+
+                <TextView
+                    android:id="@+id/textView24"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="30dp"
+                    android:paddingTop="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingBottom="20dp"
+                    android:text="Nota: Dentro del mapa puede que tarde un poco en mostrarte tu ubicación, esto debido a que esta característica opera sin ayuda de internet."
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textView25"
+                    android:layout_width="326dp"
+                    android:layout_height="47dp"
+                    android:gravity="center|fill"
+                    android:paddingRight="18dp"
+                    android:text="Necesito guardar las coordenadas de un cliente"
+                    android:textSize="18dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.428"
+                    app:layout_constraintStart_toEndOf="@+id/imageView8"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.571" />
+
+                <ImageView
+                    android:id="@+id/imageView8"
+                    android:layout_width="57dp"
+                    android:layout_height="54dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@android:drawable/ic_menu_help" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView29"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="30dp"
+                    android:paddingRight="10dp"
+                    android:text='1.- Dentro Coordenadas oprime el botón "CALCULAR GPS".' />
+
+                <TextView
+                    android:id="@+id/textView30"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="30dp"
+                    android:paddingRight="10dp"
+                    android:text='2.- En el momento en que los espacios de Latitud y Longitud cargen datos, oprime el botón "ASIGNAR A CLIENTE".' />
+
+                <TextView
+                    android:id="@+id/textView31"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="30dp"
+                    android:paddingRight="10dp"
+                    android:text="3.- Escribe el nombre del cliente al que quieras guardar las coordenadas. Observa el ID del cliente que se encuentra en la parte superior a la izquierda." />
+
+                <TextView
+                    android:id="@+id/textView32"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="30dp"
+                    android:paddingRight="10dp"
+                    android:text='4.- Oprime El botón "IR A CLIENTE"' />
+
+                <TextView
+                    android:id="@+id/textView33"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="30dp"
+                    android:paddingRight="10dp"
+                    android:text='5.- Coloca el ID del cliente. Posteriormente deberas oprimir el botón "BUSCAR" y cuando cargue el nombre deberas dar click en "GUARDAR".' />
+
+                <TextView
+                    android:id="@+id/textView34"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="30dp"
+                    android:paddingTop="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingBottom="20dp"
+                    android:text="Nota: Es necesario contar con internet para utilizar esta característica"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/nue"
+                    android:layout_width="337dp"
+                    android:layout_height="57dp"
+                    android:gravity="center|fill"
+                    android:text="Necesito saber que reportes están sin solucionar"
+                    android:textSize="18sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.764"
+                    app:layout_constraintStart_toEndOf="@+id/imagenue"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/imagenue"
+                    android:layout_width="57dp"
+                    android:layout_height="54dp"
+                    android:layout_weight="1"
+                    android:outlineAmbientShadowColor="#00140505"
+                    app:layout_constraintBottom_toBottomOf="@+id/nue"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@android:drawable/ic_menu_help" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textnue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="30dp"
+                android:paddingRight="10dp"
+                android:text='1.- Dentro del menú oprime el botón "Reportes".' />
+
+            <TextView
+                android:id="@+id/textView35"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="30dp"
+                android:paddingRight="10dp"
+                android:text="2.- Escribe tu nombre y veras los reportes los cuales te han asignado." />
+
+        </LinearLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/nue1"
+                    android:layout_width="337dp"
+                    android:layout_height="57dp"
+                    android:gravity="center|fill"
+                    android:text="Quiero dar por terminado un reporte"
+                    android:textSize="18sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.764"
+                    app:layout_constraintStart_toEndOf="@+id/imagenue1"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/imagenue1"
+                    android:layout_width="57dp"
+                    android:layout_height="54dp"
+                    android:layout_weight="1"
+                    android:outlineAmbientShadowColor="#00140505"
+                    app:layout_constraintBottom_toBottomOf="@+id/nue1"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@android:drawable/ic_menu_help" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textnue1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="30dp"
+                    android:paddingRight="10dp"
+                    android:text='1.- Dentro del menú oprime el botón "Reportes".' />
+
+                <TextView
+                    android:id="@+id/textView66"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="30dp"
+                    android:paddingRight="10dp"
+                    android:text="2.- Escribe tu nombre y veras los reportes los cuales te han asignado. Observa el número que se encuentra en la parte superior a la izquierda del reporte que haz solucionado." />
+
+                <TextView
+                    android:id="@+id/textView36"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="30dp"
+                    android:paddingRight="10dp"
+                    android:text='3.- Oprime el botón "IR A REPORTE".' />
+
+                <TextView
+                    android:id="@+id/textView37"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="30dp"
+                    android:paddingRight="10dp"
+                    android:text='4.- Coloca el ID del reporte y oprime el botón "Búscar".' />
+
+                <TextView
+                    android:id="@+id/textView38"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="30dp"
+                    android:paddingRight="10dp"
+                    android:text='5.- Edita el "estado" del reporte por "Atendido". Agrega comentarios en el campo "Comentarios" si es necesario' />
+
+                <TextView
+                    android:id="@+id/textView39"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="30dp"
+                    android:paddingTop="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingBottom="20dp"
+                    android:text="Nota: Es necesario contar con internet para utilizar esta característica"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/nue2"
+                    android:layout_width="337dp"
+                    android:layout_height="57dp"
+                    android:gravity="center|fill"
+                    android:text="Necesito llegar al lugar de un reporte."
+                    android:textSize="18sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.764"
+                    app:layout_constraintStart_toEndOf="@+id/imagenue2"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/imagenue2"
+                    android:layout_width="57dp"
+                    android:layout_height="54dp"
+                    android:layout_weight="1"
+                    android:outlineAmbientShadowColor="#00140505"
+                    app:layout_constraintBottom_toBottomOf="@+id/nue2"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@android:drawable/ic_menu_help" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textnue2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="30dp"
+                    android:paddingRight="10dp"
+                    android:text='1.- Dentro del menú oprime el botón "Reportes".' />
+
+                <TextView
+                    android:id="@+id/textView666"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="30dp"
+                    android:paddingRight="10dp"
+                    android:text="2.- Escribe tu nombre y veras los reportes los cuales te han asignado. Observa el número que se encuentra en la parte superior a la izquierda del reporte que haz solucionado." />
+
+                <TextView
+                    android:id="@+id/textView366"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="30dp"
+                    android:paddingRight="10dp"
+                    android:text='3.- Oprime el botón "IR A REPORTE".' />
+
+                <TextView
+                    android:id="@+id/textView377"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="30dp"
+                    android:paddingRight="10dp"
+                    android:text='4.- Coloca el ID del reporte y oprime el botón "Buscar".' />
+
+                <TextView
+                    android:id="@+id/textView388"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="30dp"
+                    android:paddingRight="10dp"
+                    android:text='5.- Oprime el botón "TRAZAR RUTA"' />
+
+                <TextView
+                    android:id="@+id/textView86"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="30dp"
+                    android:paddingRight="10dp"
+                    android:text='6.- Espera a que cargue el mapa. Cuando lo haga oprime el puntero rojo que aparece. Debera tener el nombre de "Reporte"' />
+
+                <TextView
+                    android:id="@+id/textView846"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="30dp"
+                    android:paddingRight="10dp"
+                    android:text='7.- Presiona el pequeño botón azul que aparece en la parte de abajo a la derecha del mapa' />
+
+                <TextView
+                    android:id="@+id/textView8466"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="30dp"
+                    android:paddingRight="10dp"
+                    android:text='8.- Cargará la ruta a seguir para llegar al punto del reporte.' />
+
+                <TextView
+                    android:id="@+id/textView399"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="30dp"
+                    android:paddingTop="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingBottom="20dp"
+                    android:text="Nota: Puedes oprimir el botón INICIO para llegar a la ubicación con mayor comodidad "
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView40"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:paddingLeft="30dp"
+                    android:paddingTop="40dp"
+                    android:paddingRight="10dp"
+                    android:paddingBottom="20dp"
+                    android:text="RutasOffline. V1.0"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">RutasOffline</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_noe">Map</string>
+    <string name="URL_DATOS">http://192.168.1.69/CDSI/consulta.php</string>
+    <string name="URL_CLIENTES">http://192.168.1.69/CDSI/Buscar_Cliente.php</string>
+    <string name="title_activity_trazar_ruta">Map</string>
+</resources>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".Main2Activity">
+
+    <item
+        android:id="@+id/itcooredenadas"
+        android:title="Coordenadas" />
+    <item
+        android:id="@+id/itreportes"
+        android:title="Reportes" />
+    <item
+        android:id="@+id/itclientes"
+        android:title="Clientes" />
+    <item
+        android:id="@+id/itsistema"
+        android:title="Sistema" />
+    <item
+        android:id="@+id/itayuda"
+        android:title="Ayuda" />
+    <item
+        android:id="@+id/itabout"
+        android:title="About" />
+</menu>
